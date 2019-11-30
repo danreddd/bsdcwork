@@ -5,6 +5,7 @@ body {
   background-size: cover;
   text-align: center;
   font-size: 80px;
+  overflow-x:hidden;
 }
 
 a {
