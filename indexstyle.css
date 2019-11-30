@@ -35,6 +35,18 @@ p {
 	
 }
 
+#collegebutton {
+	float: left;
+	padding-left: 650px;
+	
+}
+
+#weatherbutton {
+	float: right;
+	padding-right: 660px;
+	
+}
+
 .backbutton {
 	
 	text-align:center;

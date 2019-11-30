@@ -3,33 +3,33 @@
 <head>
 <title> Christmas Morning </title>
 
-<link rel="stylesheet" type="text/css" href="indexstyle.css">
+<link rel="stylesheet" type="text/css" href="collegestyle.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
 <h1> Welcome to Chirstmas Morning </h1>
 
-<section id="collegebutton">
-<div class="bg">
-		<div class="centerer">
-			<a href="collegeclose.html" class="button">Is college closed?</a>
-		</div>
-		</section>
 
-<section id="weatherbutton">
-<div class="bg">
-		<div class="centerer">
-			<a href="weather.html" class="button" align="right">Weather report</a>
-		</div>
-</section>
 
-<br>
-<p id="demo"></p>
+<a class="weatherwidget-io" href="https://forecast7.com/en/52d81n1d64/burton-upon-trent/" data-label_1="BURTON" data-label_2="WEATHER" data-theme="original" >BURTON WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+
+
+
+
+
+<a href="index.html"> Back to homepage</a>
+
+
+
+
 
 <div class="winter-is-coming">
   
@@ -45,48 +45,13 @@
 
 <canvas id="canvas"></canvas>
 
-
+<audio src="/music/christmas.mp3" autoplay >
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
 
 <script>
 document.addEventListener('contextmenu', event => event.preventDefault());
 </script>
-
-
-
-<div class="timer">
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Dec 25, 2019 07:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-</div>
-
-
 
 <script>
 
@@ -745,18 +710,6 @@ var snowStorm = (function(window, document) {
 }(window, document));
 
  </script>
- <br>
-
-<div class="music">
-<audio autoplay="autoplay" controls="controls">     <source src="music/christmas.mp3" />     <source src="music.mp3" />   </audio> 
-</div>
-
-
-
-<p id="mobile" >If you are on a mobile device, <a href="mobile.html">click here.</a> </P>
-
-
-<p id="password" > <a href="login.html">Staff Only </a></P>
 
 </body>
 
@@ -771,3 +724,11 @@ var snowStorm = (function(window, document) {
 
 
 </html>
+
+
+
+
+
+
+
+
