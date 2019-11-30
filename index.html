@@ -37,9 +37,9 @@
 
 <canvas id="canvas"></canvas>
 
-<audio src="/music/christmas.mp3" autoplay >
-<p>If you are reading this, it is because your browser does not support the audio element.</p>
-</audio>
+<div class="music">
+<audio autoplay="autoplay" controls="controls">     <source src="music/christmas.mp3" />     <source src="music.mp3" />   </audio> 
+</div>
 
 <script>
 document.addEventListener('contextmenu', event => event.preventDefault());
