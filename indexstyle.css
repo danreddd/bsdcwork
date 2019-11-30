@@ -1,8 +1,16 @@
 body {
-  background:#000000;
+  background-image: url('images/christmasbg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   text-align: center;
   font-size: 80px;
 }
+
+a {
+  color: white;
+}
+
 
 h1 {
 	color: white;
@@ -117,7 +125,7 @@ html, body {
 	
 	
 .music {
-	
+	padding-top: 25px;
 	float:center;
 	
 }
